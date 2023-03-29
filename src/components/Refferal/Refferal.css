@@ -112,7 +112,7 @@
 }
 
 .leurre p{
-    font-size: max(calc(14 * var(--res)), 13px);
+    font-size: max(calc(14 * var(--res)), 10px);
 }
 .mini-button{
     position: absolute;
