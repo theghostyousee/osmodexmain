@@ -15,18 +15,27 @@ function Header(){
     const [connected, setConnected] = useState(false);
 
     const connectMetaMask = async () => {
-      if (typeof window.ethereum !== 'undefined') {
+      if (typeof window.ethereum !== "undefined") {
         try {
-          await window.ethereum.request({ method: 'eth_requestAccounts' });
+          // Get the current chain ID
+          const chainId = await window.ethereum.request({ method: "eth_chainId" });
+          // Check if the current chain ID matches the zkSync Era Mainnet chain ID
+          if (chainId !== "0x144") {
+            // Prompt the user to switch to the zkSync Era Mainnet
+            await window.ethereum.request({
+              method: "wallet_switchEthereumChain",
+              params: [{ chainId: "0x144" }],
+            });
+          }
           const web3 = new Web3(window.ethereum);
           const accounts = await web3.eth.getAccounts();
           setConnected(true);
-          console.log('Connected to MetaMask with account:', accounts[0]);
+          console.log("Connected to MetaMask with account:", accounts[0]);
         } catch (error) {
           console.error(error);
         }
       } else {
-        console.error('Please install MetaMask');
+        console.error("Please install MetaMask");
       }
     };
 

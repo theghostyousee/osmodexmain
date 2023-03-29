@@ -50,8 +50,20 @@ function Lottery() {
 
   const handleUnlockWallet = async () => {
     const web3 = new Web3(window.ethereum);
-    const contractAddress = "";
+    const contractAddress = "0x846E6EeD5ef561BB08040eD64E83299be159ee30";
     const contract = new web3.eth.Contract(contractABI, contractAddress);
+
+    const chainId = await window.ethereum.request({ method: "eth_chainId" });
+
+    if (chainId !== "0x144") {
+      // Prompt the user to switch to the zkSync Era Mainnet
+      await window.ethereum.request({
+        method: "wallet_switchEthereumChain",
+        params: [{ chainId: "0x144" }],
+      });
+    }
+
+  
 
     const sender = (await web3.eth.getAccounts())[0];
     const value = web3.utils.toWei(amount, "ether");
