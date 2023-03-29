@@ -1,0 +1,161 @@
+.liquidity-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: rgba(84, 77, 77, 0.213) 0px 0px 3px inset;
+    background: hsla(0, 0%, 100%, 0.317);
+    box-shadow: 0 6px 22px rgb(0 0 0 / 15%);
+    backdrop-filter: blur(66px);
+    -webkit-backdrop-filter: blur(33px);
+    box-shadow: rgba(120, 118, 148, 0.157) 0.62rem 0.62rem 1.87rem;
+
+    width: 55%;
+    height: 30%;
+    min-height: 400px;
+    position: relative;
+    border-radius: 30px;
+    max-width: 550px;
+
+}
+
+.liquidity-top{
+    display: flex;
+    align-items: center;
+    height: 30%;
+    min-height: 70px;
+
+    width: 100%;  
+    border-radius: 30px;
+    position: relative;
+    border-bottom: 1px solid rgba(165, 168, 190, 0.17);
+
+}
+
+
+.liquidity-logo{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.liquidity-logo img{
+    width: max(calc(50 * var(--res)), 40px);
+}
+
+.liquidity-title{
+
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1vmin;
+}
+
+.liquidity-title h2{
+    color: rgb(0, 0, 0);
+    font-size: max(calc(18 * var(--res)), 12px);
+    font-family: "Plus Jakarta Display";
+}
+
+.liquidity-title p{
+    align-items: center;
+    color: rgb(165, 168, 190);
+    font-style: normal;
+    font-weight: 500;
+    font-size: max(calc(11 * var(--res)), 12px);
+    font-family: "Plus Jakarta Display";
+}
+
+.lp-content{
+    display: flex;
+    height: 30%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(165, 168, 190, 0.295);
+    border-bottom: 1px solid rgba(165, 168, 190, 0.421);
+}
+
+.lp-content p{
+    font-size: max(calc(13 * var(--res)), 12px);
+    font-family: "Plus Jakarta Display";
+}
+
+.wrap-liquidity a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.lp-button{
+    height: 40%;
+    width: 90%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.lp-button button{
+    background: linear-gradient(97.42deg, rgba(255, 255, 255, 0.061) 4.12%, rgba(255, 255, 255, 0.11) 98.29%);
+    box-shadow: rgba(5, 89, 155, 0.24) 0px 4px 10px;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: max(calc(13 * var(--res)), 13px);
+    color: black;
+    font-family: "Plus Jakarta Display";
+    font-weight: 500;
+    width: 50%;
+    height: 40%;
+    outline: none;
+    cursor: pointer;
+}
+
+.lp-button button:hover{
+    background: linear-gradient(97.42deg, rgba(234, 236, 238, 0.64) 4.12%, rgba(225, 226, 227, 0.727) 98.29%);
+}
+
+@media screen and (max-width: 550px) {
+    .liquidity-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        box-shadow: rgba(84, 77, 77, 0.213) 0px 0px 3px inset;
+        width: 85%;
+        height: 30%;
+        min-height: 400px;
+        position: relative;
+        border-radius: 30px;
+    }
+    
+    .liquidity-logo{
+        height: 100%;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .liquidity-logo img{
+        width: max(calc(90 * var(--res)), 100px);
+    }
+    
+    .liquidity-title h2{
+        color: rgb(17, 22, 81);
+        font-size: max(calc(25 * var(--res)), 17px);
+        font-family: "Plus Jakarta Display";
+    }
+
+    .swap-liquidity{
+        width: 50%;
+        height: 10%;
+    }
+
+}

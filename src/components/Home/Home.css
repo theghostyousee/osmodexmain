@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.main{
+    display: flex;
+    
+    justify-content: center;
+    align-items: start;
+
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+
+    right: 0;
+    left: 250px;
+}
+
+.wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.first-row{
+    width: 100%;
+    height: 20%;
+    min-height: 230px;
+    justify-content: space-evenly;
+
+    display: flex;
+    align-items: center;
+}
+
+.trading-card{
+    background: rgb(255, 255, 255);
+    box-shadow: 0 6px 22px rgb(0 0 0 / 15%);
+    backdrop-filter: blur(66px);
+    -webkit-backdrop-filter: blur(33px);
+
+    border-radius: 1.56rem;
+    width: 45%;
+    height: 75%;
+    box-shadow: rgba(120, 118, 148, 0.157) 0.62rem 0.62rem 1.87rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.trading-card h1{
+    font-size: max(calc(28 * var(--res)), 26px);
+    font-weight: 550;
+    color: rgb(17, 22, 81);
+    font-family: sans-serif;
+}
+
+.trading-card img{
+    width: max(calc(40 * var(--res)), 50px);
+}
+
+.earning-card{
+    width: 45%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient(108.54deg, rgba(243, 238, 238, 0.5) 1.86%, rgba(220, 222, 229, 0.5) 100%) padding-box padding-box, linear-gradient(95.1deg, rgba(22, 22, 22, 0.293) 0.55%, rgba(0, 0, 0, 0.3) 97.54%) border-box border-box;
+    box-shadow: rgba(0, 0, 0, 0.05) 0.6rem 0.6rem 1.87rem;
+    backdrop-filter: blur(66px);
+    -webkit-backdrop-filter: blur(33px);
+    border: 2px solid transparent;
+    padding: 2em;
+    border-radius: 1.56rem;
+}
+
+.champi{
+
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    display: flex;
+    background-image: url('../../media/champi.png');
+    opacity: 0.5;
+    background-position: center center;
+    background-size: contain;
+}
+
+
+.champi img{
+    width: 500px;
+}
+
+.earning-card h3{
+    font-size: max(calc(13 * var(--res)), 17px);
+    color: rgb(53, 55, 67);
+    font-weight: 600;
+
+}
+
+.earning-card h1{
+    color: rgb(38, 39, 40);
+    font-weight: 600;
+    font-size: max(calc(25 * var(--res)), 12px);
+
+}
+
+
+.tvl-card{
+    width: 45%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background: linear-gradient(108.54deg, rgb(56, 137, 235) 1.86%, rgb(0, 88, 254) 100%); */
+    background: white;
+    box-shadow: rgba(1, 12, 21, 0.15) 10px 10px 30px;
+    padding: 2em;
+    border-radius: 1.56rem;
+    position: relative;
+}
+
+.tvl-card:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../media/BG.png");
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.tvl-card h3{
+    font-size: max(calc(13 * var(--res)), 15px);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+
+}
+
+.tvl-card h1{
+    color: rgb(0, 0, 0);
+    font-size: max(calc(31 * var(--res)), 25px);
+    font-weight: 600;
+}
+
+.range{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 30%;
+    align-items: center;
+    
+}
+
+
+
+.info-card{
+    background: hsla(0, 0%, 100%, 0.317);
+    box-shadow: 0 6px 22px rgb(0 0 0 / 15%);
+    backdrop-filter: blur(66px);
+    -webkit-backdrop-filter: blur(33px);
+    box-shadow: rgba(120, 118, 148, 0.157) 0.62rem 0.62rem 1.87rem;
+    border-radius: 1.56rem;
+    width: 45%;
+    height: 75%;
+    box-shadow: rgba(120, 118, 148, 0.157) 0.62rem 0.62rem 1.87rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-card h3{
+    font-size: max(calc(14 * var(--res)), 12px);
+    font-weight:600;
+    color: rgb(28, 6, 32);
+    font-family: sans-serif;
+}
+
+.info-card h2{
+    font-size: max(calc(15 * var(--res)), 12px);
+    font-weight: 400;
+    font-family: sans-serif;
+    color: rgb(59, 60, 99);
+}
+
+
+.info-card img{
+    width: max(calc(40 * var(--res)), 50px);
+}
+
+
+.second-row{
+    width: 92%;
+    height: 10%;
+    min-height: 130px;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+}
+
+
+@media screen and (max-width: 820px) {
+
+
+    .main{
+        display: flex;
+        
+        justify-content: center;
+        align-items: start;
+    
+        position: absolute;
+        top: 100px;
+        bottom: 0;
+    
+        right: 0;
+        left: 0;
+    }
+    
+    .wrap{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 530px) {
+
+    .wrap{
+        gap: 3vmin;
+    }
+    .first-row{
+        gap: 100vmin;
+    }
+    .trading-card{
+        border-radius: 1.56rem;
+        width: 95%;
+        height: 75%;
+        box-shadow: rgba(120, 118, 148, 0.708) -0.2rem 0.42rem 1.4rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4vmin;
+        align-items: center;
+    }
+
+    .trading-card h1{
+        font-size: max(calc(28 * var(--res)), 22px);
+        font-weight: 550;
+        color: rgb(17, 22, 81);
+        font-family: sans-serif;
+    }
+
+    .trading-card img{
+        width: max(calc(40 * var(--res)), 30px);
+    }
+
+
+    .tvl-card{
+        padding: 1em;
+        width: 95%;
+    }
+    .info-card{
+        border-radius: 1.56rem;
+        width: 95%;
+        height: 75%;
+        box-shadow: rgba(120, 118, 148, 0.157) 0.62rem 0.62rem 1.87rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-card h3{
+        font-size: max(calc(12 * var(--res)), 10px);
+        font-weight: 600;
+        color: rgb(17, 22, 81);
+        text-align: end;
+        font-family: sans-serif;
+    }
+
+    .info-card h2{
+        font-size: max(calc(15 * var(--res)), 12px);
+        font-weight: 400;
+        font-family: sans-serif;
+        color: rgb(165, 168, 190);
+    }
+
+    .earning-card{
+        width: 95%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        box-shadow: rgba(120, 118, 148, 0.05) 0.6rem 0.6rem 1.87rem;
+        border: 2px solid transparent;
+        padding: 2em;
+        border-radius: 1.56rem;
+    }
+    
+
+    .info-card img{
+        width: max(calc(40 * var(--res)), 50px);
+    }
+
+
+}

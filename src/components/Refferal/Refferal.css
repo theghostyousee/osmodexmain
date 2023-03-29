@@ -1,0 +1,392 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css");
+
+.invite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 0.5vmin;
+    padding: 2em;
+    border-radius: 1.56rem;
+    color: rgba(44, 41, 41, 0.96);
+    width: 95%;
+    height: 70%;
+    font-family: "Plus Jakarta Display";
+    background: linear-gradient(108.54deg, rgba(236, 233, 233, 0.734) 1.86%, rgba(255, 255, 255, 0.342) 100%);
+    border: 1px solid black;
+    box-shadow: rgba(5, 89, 155, 0.15) 10px 10px 30px;
+}
+
+
+.invite h2{
+  font-size: max(calc(20 * var(--res)), 16px);
+
+}
+
+.invite p{
+    font-size: max(calc(11 * var(--res)), 13px);
+    color: rgba(0, 0, 0, 0.759);
+
+}
+
+.farmref-card{
+    width: 45%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: hsla(0, 0%, 100%, 0.317);
+    border: 1px solid black;
+    box-shadow: 0 6px 22px rgb(0 0 0 / 15%);
+    backdrop-filter: blur(66px);
+    -webkit-backdrop-filter: blur(33px);
+    box-shadow: rgba(120, 118, 148, 0.157) 0.62rem 0.62rem 1.87rem;
+    padding: 2em;
+    border-radius: 1.56rem;
+}
+
+.farmref-card p{
+    font-size: max(calc(11 * var(--res)), 10px);
+    color: rgb(165, 168, 190);
+    font-family: "Plus Jakarta Display";
+    font-weight: 500;
+}
+
+.farmref-card h1{
+    color: rgb(2, 3, 23);
+    font-size: max(calc(21 * var(--res)), 18px);
+    font-weight: 600;
+}
+
+.farmref-card button{
+    background-color: rgb(165, 168, 190);
+    color: white;
+    outline: none;
+    width: 130px;
+    height: 40%;
+    font-size: max(calc(13 * var(--res)), 14px);
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+}
+
+
+.ref-link-card{
+    background: linear-gradient(108.54deg, rgb(237, 232, 232) 1.86%, rgb(221, 217, 217) 100%);
+    border: 1px solid black;
+    border-radius: 1.56rem;
+    width: 45%;
+    height: 75%;
+    box-shadow: rgba(20, 20, 24, 0.157) 0.62rem 0.62rem 1.87rem;
+    display: flex;
+    flex-direction: column;
+    color: rgb(23, 23, 23);
+    justify-content: center;
+    gap: 1vmin;
+    align-items: center;
+}
+
+.ref-link-card h3{
+    font-size: max(calc(12 * var(--res)), 16px);
+    font-weight: 600;
+    color: rgb(23, 4, 30);
+    font-family: sans-serif;
+}
+
+.ref-link-card h1{
+    font-size: max(calc(20 * var(--res)), 16px);
+}
+
+.leurre{
+    border-radius: 0.6rem;
+    background: rgba(255, 255, 255, 0.595);
+    -webkit-box-pack: start;
+    justify-content: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 30%;
+    position: relative;
+    font-weight: 500;
+}
+
+.leurre p{
+    font-size: max(calc(14 * var(--res)), 13px);
+}
+.mini-button{
+    position: absolute;
+    left: 94%;
+    display: flex;
+    width: 20%;
+
+    background: rgb(165, 168, 190);
+    height: 100%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    cursor: not-allowed;
+    border-radius: 10px;
+}
+.mini-button img{
+    filter: invert(98%) sepia(6%) saturate(6%) hue-rotate(200deg) brightness(103%) contrast(99%);
+    width: max(calc(16 * var(--res)), 14px);
+
+}
+
+.list-card{
+    width: 95%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    background: hsla(0, 0%, 100%, 0.317);
+    box-shadow: 0 6px 22px rgb(0 0 0 / 15%);
+    backdrop-filter: blur(66px);
+    -webkit-backdrop-filter: blur(33px);
+    box-shadow: rgba(120, 118, 148, 0.157) 0.62rem 0.62rem 1.87rem;
+    border-radius: 1.56rem;
+}
+
+.top-part{
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.left-part{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0vmin;
+    padding: 2em;
+    justify-content: center;
+    align-items: start;
+}
+
+.left-part h1{
+    color: rgb(17, 22, 81);
+    font-style: normal;
+    font-family: "Plus Jakarta Display";
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-size: max(calc(14 * var(--res)), 13px);
+    line-height: 1.43rem;
+}
+
+.left-part p{
+    color: rgb(165, 168, 190);
+    font-style: normal;
+    font-family: "Plus Jakarta Display";
+    margin-top: 0.5rem;
+    font-size: max(calc(12 * var(--res)), 7px);
+    font-weight: 500;
+    line-height: 1.3rem;
+}
+
+
+
+.right-part{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.right-part input{
+    background: hsla(0, 0%, 100%, 0.317);
+    box-shadow: 0 6px 22px rgb(0 0 0 / 15%);
+    backdrop-filter: blur(66px);
+    -webkit-backdrop-filter: blur(33px);
+    box-shadow: rgba(120, 118, 148, 0.157) 0.62rem 0.62rem 1.87rem;
+    border: 1px solid rgba(165, 168, 190, 0.5);
+    border-radius: 12px;
+    height: 50%;
+    display: flex;
+    width: 60%;
+    padding: 1em;
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+.down-part{
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.down-part button{
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.975);
+    box-shadow: rgba(5, 89, 155, 0.24) 0px 4px 10px;
+    border-radius: 30px;
+    font-size: max(calc(13 * var(--res)), 13px);
+    border: none;
+    font-family: "Plus Jakarta Display";
+    font-weight: 500;
+    width: 50%;
+    max-width: 200px;
+    border: 1px solid #000;
+    height: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.down-part button:hover{
+    background: rgba(222, 222, 227, 0.334);
+}
+
+
+@media screen and (max-width: 550px) {
+    .leurre{
+        border-radius: 0.6rem;
+        -webkit-box-pack: start;
+        justify-content: start;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 40%;
+        padding: 0 1em;
+        width: 70%;
+        position: relative;
+        font-weight: 500;
+    }
+
+    .first-row{
+        width: 100%;
+        height: 45%;
+        min-height: 230px;
+        gap: 5vmin;
+        justify-content: space-evenly;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .wrap{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    
+    .farmref-card{
+        width: 95%;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        padding: 1em 2em;
+        border-radius: 1.56rem;
+    }
+
+    .farmref-card p{
+        font-size: max(calc(11 * var(--res)), 14px);
+        font-family: "Plus Jakarta Display";
+        font-weight: 500;
+    }
+    
+    .farmref-card h1{
+        font-size: max(calc(21 * var(--res)), 18px);
+        font-weight: 600;
+    }
+
+    .ref-link-card{
+        border-radius: 1.56rem;
+        width: 95%;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        gap: 4vmin;
+        padding: 1em 2em;
+        justify-content: center;
+        align-items: start;
+    }
+    
+    .ref-link-card h3{
+        font-size: max(calc(12 * var(--res)), 19px);
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+    
+    .ref-link-card h1{
+        font-size: max(calc(20 * var(--res)), 20px);
+    }
+
+    .left-part h1{
+        font-style: normal;
+        font-family: "Plus Jakarta Display";
+        font-weight: 500;
+        font-size: 1.1rem;
+        font-size: max(calc(14 * var(--res)), 20px);
+        line-height: 1.43rem;
+    }
+    
+    .left-part p{
+        font-style: normal;
+        font-family: "Plus Jakarta Display";
+        margin-top: 0.5rem;
+        font-size: max(calc(12 * var(--res)), 12px);
+        font-weight: 500;
+        line-height: 1.3rem;
+    }
+
+    .left-part{
+        width: 50%;
+        height: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 0vmin;
+        padding: 1em;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .invite{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 4vmin;
+        padding: 2em;
+        border-radius: 1.56rem;
+        width: 95%;
+        height: 70%;
+        font-family: "Plus Jakarta Display";
+    }
+    
+    
+    .invite h2{
+      font-size: max(calc(20 * var(--res)), 20px);
+      line-height: 1.3;
+    }
+    
+    .invite p{
+        font-size: max(calc(11 * var(--res)), 13px);
+        line-height: 1.7;
+    
+    }
+    
+
+    
+    
+}
