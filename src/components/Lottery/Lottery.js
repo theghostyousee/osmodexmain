@@ -50,7 +50,7 @@ function Lottery() {
 
   const handleUnlockWallet = async () => {
     const web3 = new Web3(window.ethereum);
-    const contractAddress = "0x846E6EeD5ef561BB08040eD64E83299be159ee30";
+    const contractAddress = "";
     const contract = new web3.eth.Contract(contractABI, contractAddress);
 
     const sender = (await web3.eth.getAccounts())[0];
