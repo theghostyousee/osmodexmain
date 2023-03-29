@@ -165,3 +165,11 @@ body:after {
     margin: -5em;
   }
 }
+
+@media screen  and (max-width: 545px) {
+
+
+  .champi{
+    display: none;
+  }
+}
