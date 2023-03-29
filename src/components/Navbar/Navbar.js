@@ -53,7 +53,7 @@ function Navbar() {
         </li>
         <li>
           <img src={Refferal} alt="dash"></img>
-          <Link to="/refferal" onClick={handleLinkClick}>Refferal</Link>
+          <Link to="/refferal" onClick={handleLinkClick}>Referral</Link>
         </li>
         <li>
           <img src={Lottery} alt="dash"></img>
