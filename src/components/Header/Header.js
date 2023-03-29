@@ -7,6 +7,11 @@ import Web3 from 'web3';
 import { useState } from 'react';
 
 function Header(){
+
+
+
+
+
     const [connected, setConnected] = useState(false);
 
     const connectMetaMask = async () => {

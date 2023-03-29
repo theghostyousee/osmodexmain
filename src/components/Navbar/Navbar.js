@@ -21,6 +21,15 @@ function Navbar() {
     }
     parentLi.style.background = '#fcf8fb91';
   }
+
+  function openTwitter() {
+    window.open("https://twitter.com/Osmo_Dex");
+  }
+
+  function openDiscord() {
+    window.open("discord.gg/osmodex");
+  }
+  
   
 
   return (
@@ -61,8 +70,8 @@ function Navbar() {
       </ul>
       <ul className="ul-two">
         <div className="socials">
-          <img src={Twitter} alt="dash"></img>
-          <img src= {Discord} alt="dash"></img>
+          <img src={Twitter}  onClick={openTwitter}          alt="dash"></img>
+          <img src= {Discord} onClick={openDiscord}  alt="dash"></img>
         </div>
       </ul>
     </div>
