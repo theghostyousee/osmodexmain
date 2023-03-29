@@ -13,7 +13,7 @@ function Refferal() {
             <div className="invite">
 
                 <h2> Invite your friends. Earn cryptocurrency together</h2>
-                <p>Earn a certain commission reward from your friends through invitation on StackSwap and 0.5% of their earnings from Stake and Farm programs.</p>
+                <p>Earn a certain commission reward from your friends through invitation on Osmo Dex and 0.5% of their earnings from Stake and Farm programs.</p>
 
             </div>
         </div>
